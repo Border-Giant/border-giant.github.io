@@ -8,23 +8,23 @@
             3CE HS Code lookup widget page
         </p>
     </h2>
-    
-    <div class="lookupRow">
-        <label class="lookupLabel">Product Description: </label>
-        <input class="lookupInput" type="text" id="productDescription">
-    </div>
-    <div class="lookupRow">
-        <label class="lookupLabel">Destination Country Code: </label>
-        <input class="lookupInput" type="text" id="destinationCountry">
-    </div>
-    <div class="lookupRow">
-        <label class="lookupLabel">Origin Country Code: </label>
-        <input class="lookupInput" type="text" id="originCountry">
-    </div>
-    <div class="lookupRow">
-        <input class="lookupButton" type="button" value="Lookup" onclick="myLookupFunction()">
-    </div>
-
+    <form onsubmit="myLookupFunction(); return false;">
+        <div class="lookupRow">
+            <label class="lookupLabel">Product Description: </label>
+            <input class="lookupInput" type="text" id="productDescription" required>
+        </div>
+        <div class="lookupRow">
+            <label class="lookupLabel">Destination Country Code: </label>
+            <input class="lookupInput" type="text" id="destinationCountry" required>
+        </div>
+        <div class="lookupRow">
+            <label class="lookupLabel">Origin Country Code: </label>
+            <input class="lookupInput" type="text" id="originCountry" required>
+        </div>
+        <div class="lookupRow">
+            <input class="lookupButton" type="submit" value="Lookup">
+        </div>
+    </form>
     <div id="HsCode" class="ccce-fullscreen"></div>
     <script src="https://embed.3ce.com" data-profile-id="80bc6792a79b41c599bd3751e10450a7" verbose env="stage" force-theme="auto" runOnload data-element-id="HsCode" data-on-complete="myCallback" data-on-abort="myAbortFunction"></script>
 </body>
