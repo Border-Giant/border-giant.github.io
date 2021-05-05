@@ -1,11 +1,31 @@
+<!DOCTYPE html>
+<header>
 
+</header>
 <body>
-    <h1>
+    <h2>
         <p>
-            Below is the 3CE HS Code lookup widget:
+            3CE HS Code lookup widget page
         </p>
-    </h1>
-    <div id="HsCode"></div>
+    </h2>
+    
+    <div class="lookupRow">
+        <label class="lookupLabel">Product Description: </label>
+        <input class="lookupInput" type="text" id="productDescription">
+    </div>
+    <div class="lookupRow">
+        <label class="lookupLabel">Destination Country Code: </label>
+        <input class="lookupInput" type="text" id="destinationCountry">
+    </div>
+    <div class="lookupRow">
+        <label class="lookupLabel">Origin Country Code: </label>
+        <input class="lookupInput" type="text" id="originCountry">
+    </div>
+    <div class="lookupRow">
+        <input class="lookupButton" type="button" value="Lookup" onclick="myLookupFunction()">
+    </div>
+
+    <div id="HsCode" class="ccce-fullscreen"></div>
     <script src="https://embed.3ce.com" data-profile-id="80bc6792a79b41c599bd3751e10450a7" verbose env="stage" force-theme="auto" runOnload data-element-id="HsCode" data-on-complete="myCallback" data-on-abort="myAbortFunction"></script>
 </body>
 
@@ -16,4 +36,47 @@
     function myAbortFunction(){
         
     }
+    function myLookupFunction(){
+        var productDescription = document.getElementById('productDescription').value;
+        console.log("Description: " + productDescription);
+        var destinationCountry = document.getElementById('destinationCountry').value;
+        console.log("Destination: " + destinationCountry);
+        var originCountry = document.getElementById('originCountry').value;
+        console.log("Origin: " + originCountry);
+
+        ccce.classify({ product: productDescription, destination: destinationCountry, origin: originCountry, lang: 'EN-US', useKeyboard: true, hs6: false}, myCallback, myAbortFunction);
+    }
 </script>
+
+<style>
+    @media (max-width:768px) {
+        .ccce-fullscreen {
+            position: fixed;
+            z-index: 6000;
+            border-radius: 0 !important;
+            max-width: 100vw !important;
+            max-height: 100vh !important;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            -webkit-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+        }
+    }
+    .lookupRow{
+        width: 340px;
+    }
+    .lookupLabel{
+        width: 180px;
+        display: inline-block;
+        text-align: right;
+    }
+    .lookupInput{
+        width: 150px;
+    }
+    .lookupButton{
+        /* margin-left: 183px; */
+        float: right;
+    }
+</style>
