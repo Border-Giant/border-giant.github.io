@@ -1,82 +1,348 @@
 <!DOCTYPE html>
-<header>
+<html lang="en">
 
-</header>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:site_name" content="Border Giant Inc.">
+    <title>Home - Border Giant Inc.</title>
+
+    <!-- FAVICONS -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="https://www.bordergiant.com/favicon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://www.bordergiant.com/favicon-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.bordergiant.com/favicon-180x180.png">
+
+    <!-- DESCRIPTION AND KEYWORDS META TAGS -->
+    <meta name="description" content="Ship faster, better, cheaper. Fully licensed customs broker & parcel service. Helping local businesses thrive in e-commerce.">
+    <meta property="og:description" content="Ship faster, better, cheaper. Fully licensed customs broker & parcel service. Helping local businesses thrive in e-commerce.">
+    <meta name="twitter:description" content="Ship faster, better, cheaper. Fully licensed customs broker & parcel service. Helping local businesses thrive in e-commerce.">
+    <meta name="keywords" content="cross border shipping, mail forwarding, export, import, logistics software, shipping automation, parcel pickups, online shopping, customs broker, parcel service, CMRA, Thunder Bay, NWO, e-commerce, logistics, shipping, border run">
+
+    <!-- PAGE DETAILS META TAGS -->
+    <meta property="og:title" content="Home - Border Giant Inc.">
+    <meta name="twitter:title" content="Home - Border Giant Inc.">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_US">
+
+    <!-- URL META TAGS -->
+    <link rel="canonical" href="https://www.bordergiant.com/index.html">
+    <meta property="og:url" content="https://www.bordergiant.com/index.html">
+
+    <!-- SOCIAL IMAGE META TAGS -->
+    <meta property="og:image" content="https://www.bordergiant.com/images/social-preview.png">
+    <meta name="twitter:image" content="https://www.bordergiant.com/images/social-preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="640">
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Site Style -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
 <body>
-    <h2>
-        <p>
-            3CE HS Code lookup test widget page
-        </p>
-    </h2>
-    <form onsubmit="myLookupFunction(); return false;">
-        <div class="lookupRow">
-            <label class="lookupLabel">Product Description: </label>
-            <input class="lookupInput" type="text" id="productDescription" required>
+    <header>
+        <!-- NAVIGATION BAR -->
+        <nav class="navbar navbar-expand-md fixed-top">
+
+            <!--Brand Image -->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo_BorderGiantWithText.png" id="navbar-brand-img" alt="Logo">
+            </a>
+
+            <!--Toggler Button-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsible-nav" aria-controls="collapsible-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!--Nav Links -->
+            <div class="collapse navbar-collapse justify-content-end" id="collapsible-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="https://app.bordergiant.com/">Sign In</a></li>
+                    <li class="nav-item"><a class="nav-link" href="logistics-technology.html">Logistics Technology</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a class="nav-link" href="export-service.html">Export Service</a></li>
+                            <li class="nav-item"><a class="nav-link" href="import-service.html" class="nav-link">Import Service</a></li>
+                            <li class="nav-item"><a class="nav-link" href="rydens-pickup-service.html">Pickups from Ryden’s</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ALERT BANNER -->
+    <div id="alert-banner" class="section-normal">
+        <div class="row">
+            <div class="col-md-2 mb-3 mb-md-0">
+                <div style="background-image: url(images/img-child-meds.svg); min-height: 100px; height: 100%; background-size: contain; background-repeat: no-repeat; background-position: center"></div>
+            </div>
+            <div class="col-md-10 text-center">
+                <h2>Helping to Fix Child Pain Meds Supply Shortages</h2>
+                <div class="text-center"><a class="btn btn-primary w-sm-100 fw-bold" style="background-color: var(--primary-color)" href="medicine-service.html">Learn more about our Children’s Medicine Import Service</a></div>
+            </div>
         </div>
-        <div class="lookupRow">
-            <label class="lookupLabel">Destination Country Code: </label>
-            <input class="lookupInput" type="text" id="destinationCountry" required>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- SECTION - INTRO -->
+        <section>
+            <div class="row section-full-screen" style=" background-image: url(images/backdrop-wooden-floor-with-green-wall.png); background-repeat: no-repeat; background-position:center bottom; background-size: cover;">
+                <div class="col-lg-6 d-flex align-items-center">
+                    <div class="video-skin">
+                        <img class="img-fluid video-play-btn" id="intro-video-btn" src="images/img-intro-video-play-button-768x768.png" alt="Video play button">
+                        <div class="fluidMedia1x1" id="intro-container">
+                            <div id="intro-video"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 cell-overlay text-center text-lg-start">
+                    <div>
+                        <h1 class="text-primary" style="font-family:'Bohem Press'">Ship Faster, <br> Better, Cheaper</h1>
+                        <h2 class="text-white" style="font-size: 34px">GET YOUR OWN UNIQUE U.S. ADDRESS TO SEND AND RECEIVE SHIPMENTS. PICK UP AND DROP OFF IN THUNDER BAY. WE HANDLE EVERYTHING IN BETWEEN.</h2>
+                        <h3 class="text-secondary mb-5" style="font-size: 22px;">Save up to 80% on shipping and have enhanced access to U.S. and International vendors and customers.</h3>
+                        <div class="text-center text-lg-start"><a class="btn btn-primary btn-lg mb-5 w-sm-100 fw-bold px-4 py-3" href="https://app.bordergiant.com/Account/Register">Sign Up Now</a></div>
+                        <img class="img-fluid img-md" src="images/logo-shipping-couriers.png" alt="UPS, FedEx and USPS logos">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION - HOW IT WORKS -->
+        <section class="section-normal bg-primary-triangles-down">
+            <h1 class="text-center text-primary mb-0">How It Works</h1>
+        </section>
+        <section class="section-normal bg-plaid-primary">
+            <div class="row card-cell">
+                <div class="col-md-6 text-center d-flex align-items-center justify-content-center">
+                    <img class="img-fluid img-sm mb-3 mb-md-0" src="images/img-how-it-works-signing-up-black.svg" alt="Signing a document">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-primary text-center text-md-start">Sign Up For An Account</h2>
+                    <p>Once you have signed up, you will have your own unique US address that you can use to receive or send goods from. Right away you will be able to send goods via any carrier after you verify your ID, address, and sign the USPS 1583 form (online or at our office). With that you will be able to receive parcels and letter mail using USPS too!</p>
+                    <div class="text-center text-md-start"><a class="btn btn-primary w-sm-100" href="https://app.bordergiant.com/Account/Register">Sign Up Here</a></div>
+                </div>
+            </div>
+        </section>
+        <section class="section-normal bg-style-1">
+            <div class="row gx-4">
+                <div class="col-md mb-3">
+                    <div class="card-cell shadow d-flex flex-column">
+                        <div class="text-center">
+                            <img class="img-fluid img-sm mb-3" src="images/img-how-it-works-exporting-black.svg" alt="Sending a shipment">
+                            <h2 class="text-center text-primary">For Sending</h2>
+                        </div>
+                        <ol class="styled-list">
+                            <li>Print your FedEx, USPS or UPS postage as you normally would. This can be done through any of your current marketplace systems, or through a shipping vendor like Pirateship.com, Shippo.com or Stamps.com. Use your new US address as the "ship from" and return address.</li>
+                            <li>From your Border Giant dashboard, enter the shipment information. You can do this manually or upload shipments in bulk using a spreadsheet.</li>
+                            <li>Drop off the shipments at Border Giant's Thunder Bay office. We will transport them to the USA, clear them through US customs and deposit them with the proper carrier. That’s all to it!</li>
+                        </ol>
+                        <p class="text-primary text-center">** Currently Limited to Shipments $800 USD or less each</p>
+                        <a class="btn btn-primary d-block mb-3" style="width: 100%; max-width: 350px; margin: 0 auto; margin-top: auto;" href="export-service.html" style="text-align: center;">Learn more about our Send It! Service</a>
+                    </div>
+                </div>
+                <div class="col-md mb-3">
+                    <div class="card-cell shadow d-flex flex-column">
+                        <div class="text-center">
+                            <img class="img-fluid img-sm mb-3" src="images/img-how-it-works-importing-black.svg" alt="Receiving a shipment">
+                            <h2 class="text-center text-primary">For Receiving</h2>
+                        </div>
+                        <ol class="styled-list">
+                            <li>Use your new U.S. address as your delivery address. Be sure to include the same name (business or personal) that you signed up with, along with the #123ABC assigned to you.</li>
+                            <li>When you know something is on its way, login to your Border Giant account, click on "Import Shipment" and enter the shipment information. You will need to upload an invoice showing the value and vendor information.</li>
+                            <li>When the shipment arrives at our US location it will automatically be cleared through Canadian Customs and delivered to our Thunder Bay Warehouse. You will receive an email that it is ready for pickup, along with the invoice for any duties and taxes collected.</li>
+                        </ol>
+                        <a class="btn btn-primary d-block mb-3" style="width: 100%; max-width: 350px; margin: 0 auto; margin-top: auto;" href="import-service.html">Learn more about our Get It! Service</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION - WHY BORDER GIANT -->
+        <section class="section-normal" style="background-image: url(images/backdrop-black-with-green-triangles.svg); background-repeat: no-repeat; background-size: cover; background-position: center;">
+            <h1 class="text-center text-primary">Why Border Giant?</h1>
+            <div class="row">
+                <div class="col-md-4 text-center mb-4">
+                    <img class="img-xs mb-3" src="images/icon-hex-save-money.svg">
+                    <h2 class="text-primary mb-1" style="font-size: 28px;">Huge Savings on Shipping</h2>
+                    <p class="text-white">Save up to 80% over Canada Post.</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <img class="img-xs mb-3" src="images/icon-hex-fast-shipping.svg">
+                    <h2 class="text-primary mb-1" style="font-size: 28px;">Faster Shipping Times</h2>
+                    <p class="text-white">Parcels are often delivered up to 7 days sooner using the Border Giant system.</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <img class="img-xs mb-3" src="images/icon-hex-mail-bulk.svg">
+                    <h2 class="text-primary mb-1" style="font-size: 28px;">Free Shipping Supplies</h2>
+                    <p class="text-white">Order whatever you need from <a href="https://store.usps.com/store/results/free-shipping-supplies/shipping-supplies/_/N-alnx4jZ7d0v8v">USPS</a>, <a href="https://www.ups.com/us/en/shipping/order-supplies.page">UPS</a> or <a href="https://www.fedex.com/en-lt/shipping/packaging/supplies.html">FedEx</a> and we will get them to you with no charge at all.</p>
+                </div>
+            </div>
+            <div class="row gx-5">
+                <div class="col-md-4 text-center mb-4">
+                    <img class="img-xs mb-3" src="images/icon-hex-secure.svg">
+                    <h2 class="text-primary mb-1" style="font-size: 28px;">Fully Licensed & Bonded</h2>
+                    <p class="text-white">We are a fully licensed, bonded and registered Commercial Carrier, Freight Forwarder, Customs Broker and Commercial Mail Receiving Agency.</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <img class="img-xs mb-3" src="images/icon-hex-parcel.svg">
+                    <h2 class="text-primary mb-1" style="font-size: 28px;">Free Return Processing</h2>
+                    <p class="text-white">Whether you need to return items or a client needs to return an item to you, we will handle the customs clearance and return portion of the Border Giant system for free.</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <img class="img-xs mb-3" src="images/icon-hex-tax-free.svg">
+                    <h2 class="text-primary mb-1" style="font-size: 28px;">U.S Tax Free</h2>
+                    <p class="text-white">Because we have all the proper licensing to act as a complete export chain, all of your purchases are legally exempt from US sales tax.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION - PROUD THUNDER BAY BUSINESS -->
+        <section class="section-normal" style="background-image: url(images/backdrop-green-envelope-pattern.svg); background-repeat: no-repeat;">
+            <h1 class="text-center text-primary">Proud Thunder Bay Business</h1>
+            <div class="row gx-5">
+                <div class="col-md-6 text-center">
+                    <img class="img-fluid img-md round shadow mb-4" src="images/photo-unloading-shipment-truck.jpg">
+                </div>
+                <div class="col-md-6 align-self-center">
+                    <h2 class="text-primary text-center text-md-start">Over 10k Parcels Exported For Local Sellers</h2>
+                    <p>Since 2018, Border Giant has been developing software to make exporting and importing easier and cheaper for other Thunder Bay businesses and we only expect to keep growing. Our clients include Lovely Body, Waxxed Candle Co. and more. So rest assured, when you’re working with us, you’re dealing with real people and can drop by our Thunder Bay office for some face-to-face customer service.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION - WHAT OUR CLIENTS ARE SAYING -->
+        <section class="section-normal bg-style-1">
+            <h1 class="text-center text-primary">What Our Clients Are Saying</h1>
+            <div class="row gx-4">
+                <div class="col-md-4 mb-3">
+                    <div class="card-cell shadow d-flex flex-column">
+                        <img class="img-fluid mb-3 mx-auto" style="max-width: 90px;" src="images/icon-avatar-default.svg">
+                        <p>“Border Giant’s services was a big, pivotal thing for us... We try to source locally as much as possible but there are a few things that we can only get in the US. Border Giant does 1-2 runs per week for us and it’s one less thing for me to have to worry about.”</p>
+                        <span class="text-primary text-center fw-bold mt-auto">– Sarah Johnston, Lovely Body</span>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card-cell shadow d-flex flex-column">
+                        <img class="img-fluid mb-3 mx-auto" style="max-width: 90px;" src="images/icon-avatar-default.svg">
+                        <p>“Before, I would bring parcels down to the border every week, do the paper work, and pay the export/import fees. Now Border Giant does everything for me.”</p>
+                        <span class="text-primary text-center fw-bold mt-auto">– Marc Methot, CARtoons Magazine</span>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card-cell shadow d-flex flex-column">
+                        <img class="img-fluid mb-3 mx-auto" style="max-width: 90px;" src="images/icon-avatar-default.svg">
+                        <p>“Importing and exporting is intimidating, but the team at Border Giant isn’t intimidating at all! They make everything easy and so convenient… I never feel like just another customer.”</p>
+                        <span class="text-primary text-center fw-bold mt-auto">– Kate Strange, Waxxed Candle Co.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION - CALL TO ACTION -->
+        <section class="section-wide border-top-primary" style="background-image: url('images/backdrop-green-grain-road.png'); background-repeat: repeat-x; background-size: auto 100%;">
+            <div class="row">
+                <div class="col-md-6 order-last order-md-first d-flex justify-content-end">
+                    <img class="mb-3" style=" height: 100%; max-height: 420px !important; width: auto !important;" src="images/img-mr-giant-waving-from-van.png">
+                </div>
+                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                    <div>
+                        <h1 class="text-center text-lg-start mb-3" style="color: white; text-shadow: 3px 3px #649B98; max-width: 530px;">START SHIPPING, FASTER, BETTER, CHEAPER</h1>
+                        <div class="text-center text-lg-start"><a class="btn btn-outline-primary btn-lg mb-5 fw-bold px-4 py-3" href="https://app.bordergiant.com/Account/Register">Sign Up Now</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div id="footer-main-area" class="text-grey">
+            <div class="row flex-md-row flex-column">
+                <div class="col-auto mx-auto mb-4">
+                    <img class="img-fluid mb-0" src="images/logo_BorderGiant-300x245.png" alt="Border Giant Logo">
+                </div>
+                <div class="col-auto mx-auto mb-4">
+                    <h2 class="text-center text-md-start">Social</h2>
+                    <div>
+                        <a class="btn btn-primary social-btn btn-lg" href="https://www.facebook.com/bordergiant"> <i class="fa-brands fa-facebook-f  text-white"></i></a>
+                        <a class="btn btn-primary social-btn btn-lg" href="https://instagram.com/bordergiant"> <i class="fa-brands fa-instagram  text-white"></i></a>
+                        <a class="btn btn-primary social-btn btn-lg" href="https://www.linkedin.com/company/border-giant/"> <i class="fa-brands fa-linkedin-in  text-white"></i></a>
+                    </div>
+                </div>
+                <div class="col-auto mx-auto mb-4" id="contact">
+                    <h2 class="text-center text-md-start">Contact</h2>
+                    <ul class="fa-ul contact-details-list">
+                        <li><span class="fa-li"><i class="fas fa-home"></i></span>1112 Russell Street Unit 1, <br>Thunder Bay, ON</li>
+                        <li><a href="tel:(807) 285-1212" class="text-grey"><span class="fa-li"><i class="fas fa-phone"></i></span>(807) 285-1212</a></li>
+                        <li><a href="mailto:info@bordergiant.com" class="text-grey"><span class="fa-li"><i class="fas fa-envelope"></i></span>info@bordergiant.com</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="lookupRow">
-            <label class="lookupLabel">Origin Country Code: </label>
-            <input class="lookupInput" type="text" id="originCountry" required>
+        <div id="copyright-div">
+            <p>&copy; Copyright <span id="current-year"></span> - Border Giant Inc. All Rights Reserved.</p>
+            <script>
+                document.getElementById('current-year').textContent = new Date().getFullYear();
+            </script>
         </div>
-        <div class="lookupRow">
-            <input class="lookupButton" type="submit" value="Lookup">
-        </div>
-    </form>
-    <div id="HsCode" class="ccce-fullscreen"></div>
-    <script src="https://embed.3ce.com" data-profile-id="80bc6792a79b41c599bd3751e10450a7" verbose env="stage" force-theme="auto" runOnload data-element-id="HsCode" data-on-complete="myCallback" data-on-abort="myAbortFunction"></script>
+    </footer>
+
+    <!-- SCRIPTS ==================================================================================================== -->
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- YouTube API for video streaming -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script>
+        var player;
+
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('intro-video', {
+                videoId: '9bHai4iwjiM',
+                playerVars: {
+                    'autoplay': 0,
+                    'modestbranding': 1,
+                    'controls': 1,
+                    'loop': 0,
+                    'rel': 0,
+                },
+                events: {
+                    'onReady': onPlayerReady
+                }
+            });
+        };
+
+        function onPlayerReady(event) {
+            var btnImage = document.getElementById('intro-video-btn');
+            btnImage.addEventListener('click', function() {
+                //Hide the play button image and reveal the video player container.
+                btnImage.style.display = 'none';
+                document.getElementById('intro-container').style.display = 'block';
+                document.getElementById('intro-video').style.opacity = 1;
+                player.playVideo();
+            });
+        }
+
+        //Wait for the page to fully load all its content and scripts before attempting to creating the YouTube video.
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof YT !== 'undefined' && typeof YT.Player !== 'undefined') {
+                onYouTubeIframeAPIReady();
+            }
+        });
+    </script>
 </body>
 
-<script>
-    function myCallback(){
-        
-    }
-    function myAbortFunction(){
-        
-    }
-    function myLookupFunction(){
-        var productDescription = document.getElementById('productDescription').value;
-        console.log("Description: " + productDescription);
-        var destinationCountry = document.getElementById('destinationCountry').value;
-        console.log("Destination: " + destinationCountry);
-        var originCountry = document.getElementById('originCountry').value;
-        console.log("Origin: " + originCountry);
-
-        ccce.classify({ product: productDescription, destination: destinationCountry, origin: originCountry, lang: 'EN-US', useKeyboard: true, hs6: false}, myCallback, myAbortFunction);
-    }
-</script>
-
-<style>
-    @media (max-width:768px) {
-        .ccce-fullscreen {
-            position: fixed;
-            z-index: 6000;
-            border-radius: 0 !important;
-            max-width: 100vw !important;
-            max-height: 100vh !important;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            -webkit-transition: all .2s ease-in-out;
-            transition: all .2s ease-in-out;
-        }
-    }
-    .lookupRow{
-        width: 340px;
-    }
-    .lookupLabel{
-        width: 180px;
-        display: inline-block;
-        text-align: right;
-    }
-    .lookupInput{
-        width: 150px;
-    }
-    .lookupButton{
-        /* margin-left: 183px; */
-        float: right;
-    }
-</style>
+</html>
