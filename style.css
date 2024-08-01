@@ -653,6 +653,24 @@ a:active,
     filter: brightness(130%);
 }
 
+.pdf-preview embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.pdf-preview {
+    position: relative;
+    padding-bottom: 90vh;
+    /* proportion value to aspect ratio 11/8.5*/
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+
 /*FOOTER ==============================*/
 
 footer {
