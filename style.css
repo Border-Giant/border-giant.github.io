@@ -431,16 +431,12 @@ nav li {
 
 /*LINKS and BUTTONS ==============================*/
 
-/* unvisited link */
 a,
 .btn-link {
     color: var(--primary-color);
     font-family: 'Source Sans Pro', sans-serif;
     text-decoration: none;
 }
-
-/* visited link */
-a:visited {}
 
 /* mouse over link */
 a:hover,
@@ -465,7 +461,6 @@ a:active,
 
 /*Primary Button*/
 .btn-primary,
-.btn-primary:visited,
 .btn-primary:disabled,
 .btn-primary.disabled {
     background-color: var(--primary-color-dark);
@@ -486,7 +481,6 @@ a:active,
 
 /*Primary Outline Button*/
 .btn-outline-primary,
-.btn-outline-primary:visited,
 .btn-outline-primary:disabled,
 .btn-outline-primary.disabled {
     background-color: white;
@@ -508,7 +502,6 @@ a:active,
 
 /*secondary Button*/
 .btn-secondary,
-.btn-secondary:visited,
 .btn-secondary:disabled,
 .btn-secondary.disabled {
     background-color: var(--secondary-color-dark);
@@ -529,7 +522,6 @@ a:active,
 
 /*secondary Outline Button*/
 .btn-outline-secondary,
-.btn-outline-secondary:visited,
 .btn-outline-secondary:disabled,
 .btn-outline-secondary.disabled {
     background-color: white;

@@ -5,7 +5,7 @@
     <!-- GOOGLE TAG (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNN1FC0JM8"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
+        window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-KNN1FC0JM8');
@@ -180,7 +180,7 @@
         </section>
 
         <!-- SECTION - WHY BORDER GIANT -->
-        <section class="section-normal" style="background-image: url(images/backdrop-black-with-green-triangles.svg); background-repeat: no-repeat; background-size: cover; background-position: center;">
+        <section class="section-normal" style="background-color: #181818; background-image: url(images/backdrop-black-with-green-triangles.svg); background-repeat: no-repeat; background-size: cover; background-position: center;">
             <h1 class="text-center text-primary">Why Border Giant?</h1>
             <div class="row">
                 <div class="col-md-4 text-center mb-4">
@@ -240,21 +240,21 @@
                     <div class="card-cell shadow d-flex flex-column">
                         <img class="img-fluid mb-3 mx-auto" style="max-width: 90px;" src="images/icon-avatar-default.svg" alt="blank avatar">
                         <p>“Border Giant’s services was a big, pivotal thing for us... We try to source locally as much as possible but there are a few things that we can only get in the US. Border Giant does 1-2 runs per week for us and it’s one less thing for me to have to worry about.”</p>
-                        <span class="text-primary text-center fw-bold mt-auto">– Sarah Johnston, Lovely Body</span>
+                        <strong class="text-primary text-center mt-auto">– Sarah Johnston, Lovely Body</strong>
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
                     <div class="card-cell shadow d-flex flex-column">
                         <img class="img-fluid mb-3 mx-auto" style="max-width: 90px;" src="images/icon-avatar-default.svg" alt="blank avatar">
                         <p>“Before, I would bring parcels down to the border every week, do the paper work, and pay the export/import fees. Now Border Giant does everything for me.”</p>
-                        <span class="text-primary text-center fw-bold mt-auto">– Marc Methot, CARtoons Magazine</span>
+                        <strong class="text-primary text-center mt-auto">– Marc Methot, CARtoons Magazine</strong>
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
                     <div class="card-cell shadow d-flex flex-column">
                         <img class="img-fluid mb-3 mx-auto" style="max-width: 90px;" src="images/icon-avatar-default.svg" alt="blank avatar">
                         <p>“Importing and exporting is intimidating, but the team at Border Giant isn’t intimidating at all! They make everything easy and so convenient… I never feel like just another customer.”</p>
-                        <span class="text-primary text-center fw-bold mt-auto">– Kate Strange, Waxxed Candle Co.</span>
+                        <strong class="text-primary text-center mt-auto">– Kate Strange, Waxxed Candle Co.</strong>
                     </div>
                 </div>
             </div>
@@ -286,9 +286,9 @@
                 <div class="col-auto mx-auto mb-4">
                     <h2 class="text-center text-md-start">Social</h2>
                     <div>
-                        <a class="btn btn-primary social-btn btn-lg" href="https://www.facebook.com/bordergiant"> <i class="fa-brands fa-facebook-f  text-white"></i></a>
-                        <a class="btn btn-primary social-btn btn-lg" href="https://instagram.com/bordergiant"> <i class="fa-brands fa-instagram  text-white"></i></a>
-                        <a class="btn btn-primary social-btn btn-lg" href="https://www.linkedin.com/company/border-giant/"> <i class="fa-brands fa-linkedin-in  text-white"></i></a>
+                        <a class="btn btn-primary social-btn btn-lg" href="https://www.facebook.com/bordergiant" aria-label="Border Giant FaceBook Page"> <i class="fa-brands fa-facebook-f text-white"></i></a>
+                        <a class="btn btn-primary social-btn btn-lg" href="https://instagram.com/bordergiant" aria-label="Border Giant Instagram Page"> <i class="fa-brands fa-instagram text-white"></i></a>
+                        <a class="btn btn-primary social-btn btn-lg" href="https://www.linkedin.com/company/border-giant/" aria-label="Border Giant LinkedIn Page"> <i class="fa-brands fa-linkedin-in text-white"></i></a>
                     </div>
                 </div>
                 <div class="col-auto mx-auto mb-4" id="contact">
@@ -344,6 +344,12 @@
                 document.getElementById('intro-video').style.opacity = 1;
                 player.playVideo();
             });
+
+            // Remove obselete frameborder attribute from the iframe to improve validation checks 
+            var iframe = document.querySelector('#intro-video');
+            if (iframe) {
+                iframe.removeAttribute('frameborder');
+            }
         }
 
         //Wait for the page to fully load all its content and scripts before attempting to creating the YouTube video.
