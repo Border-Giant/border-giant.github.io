@@ -284,7 +284,7 @@ section {}
     border-width: 10px;
     border-image-outset: 0;
     border-image-repeat: stretch;
-    border-image-source: url(images/backdrop-tech-meets-parcels-border.svg);
+    border-image-source: url(/images/backdrop-tech-meets-parcels-border.svg);
     border-image-slice: 33% !important;
     border-image-width: 300px !important;
 }
@@ -543,7 +543,7 @@ a:active,
 
 /*Accordian*/
 .accordion-button::after {
-    background-image: url(images/glyph-chevron-down.svg) !important;
+    background-image: url(/images/glyph-chevron-down.svg) !important;
 }
 
 .accordion-button.btn-primary:not(.collapsed) {
